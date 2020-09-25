@@ -1,14 +1,16 @@
-data = input()
+n, k = map(int, input().split())
+arr1 = []
+arr2 = []
+for i in range(n):
+    arr1.append(list(map(int,input().split())))
 
-result = int(data[0])
+for i in range(k):
+    arr2.append(int(input()))
 
-for i in range(1, len(data)):
+arr1.sort(key=lambda x:x[1])
+print(arr1)
 
-    num = int(data[i])
-    if num <= 1 or result <= 1:
-        result += num
 
-    else:
-        result *= num
 
-print(result)
+
+

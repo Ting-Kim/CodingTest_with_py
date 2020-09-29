@@ -1,16 +1,32 @@
-n, k = map(int, input().split())
-arr1 = []
-arr2 = []
-for i in range(n):
-    arr1.append(list(map(int,input().split())))
 
+import sys
+read = lambda : sys.stdin.readline().strip()
+import heapq
+
+n,k = map(int,read().split())
+
+dia = []
+for _ in range(n):
+    a = list(map(int,read().split()))
+    dia.append(a)
+check = []
+for _ in range(k):
+    check.append(int(read()))
+dia.sort()
+check.sort()
+print(dia)
+print(check)
+
+max_heap=[]
+j = 0
+result = 0
 for i in range(k):
-    arr2.append(int(input()))
 
-arr1.sort(key=lambda x:x[1])
-print(arr1)
+    while j<n and check[i]>=dia[j][0]:
+        heapq.heappush(max_heap,-dia[j][1])
+        j+=1
 
-
-
-
-
+    if len(max_heap)>0:
+        b = heapq.heappop(max_heap)
+        result+=abs(b)
+print(result)

@@ -8,19 +8,20 @@ def search(graph, x, y):
 
     # print(graph)
 
+    # graph[x][y] = 'o'   # 방문 체크
     if y == len(graph[0])-1 and graph[x][y] == '.':
         graph[x][y] = 'o'   # 방문 체크
         answer += 1
         return
 
-    graph[x][y] = 'o'   # 방문 체크
 
     for i in range(3):
         nx = x + dx[i]
         ny = y + dy[i]
         if nx >= 0 and nx < len(graph) and ny >= 0 and ny < len(graph[0]) and graph[nx][ny] == '.':
+            graph[x][y] = 'o'   # 방문 체크
             search(graph, nx, ny)
-            # break
+            break
     return
 
 
@@ -45,8 +46,8 @@ for _ in range(n):
 
 answer = install(graph, n, m)
 
-for i in range(n):
-    print(graph[i])
+# for i in range(n):
+#     print(graph[i])
 print(answer)
 '''
 5 5

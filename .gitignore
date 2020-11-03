@@ -6,3 +6,5 @@
 .idea/misc.xml
 .idea/pythonCodingTest.iml
 .idea/misc.xml
+*.xml
+*.iml

@@ -1,4 +1,4 @@
-# 코딩테스트 연습 > 정렬 > 가장 큰 수 ( level 2 )
+# 코딩테스트 연습 > 정렬 > 가장 큰 수 ( 프로그래머스 level 2 )
 # https://programmers.co.kr/learn/courses/30/lessons/42746
 
 import itertools

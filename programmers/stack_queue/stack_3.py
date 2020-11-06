@@ -1,4 +1,4 @@
-# 프로그래머스 > 코딩테스트 연습 > 스택/큐 > 다리를 지나는 트럭 ( Level 2 )
+# 프로그래머스 > 코딩테스트 연습 > 스택/큐 > 다리를 지나는 트럭 ( 프로그래머스 Level 2 )
 # https://programmers.co.kr/learn/courses/30/lessons/42583
 
 from collections import deque

@@ -1,3 +1,6 @@
+# 코딩테스트 연습 > 스택/큐 > 프린터 (프로그래머스 level 2)
+# https://programmers.co.kr/learn/courses/30/lessons/42587
+
 def solution(priorities, location):
     answer = 0
     ch = ord('a')

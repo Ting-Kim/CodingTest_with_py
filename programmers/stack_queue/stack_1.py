@@ -1,4 +1,4 @@
-# 주식가격(level 2)
+# 코딩테스트 연습 > 스택/큐 > 주식가격( 프로그래머스 level 2 )
 # https://programmers.co.kr/learn/courses/30/lessons/42584?language=python3
 
 

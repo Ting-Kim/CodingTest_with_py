@@ -1,4 +1,4 @@
-# 코딩테스트 연습 > 완전탐색 > 소수 찾기 ( level 2 )
+# 코딩테스트 연습 > 완전탐색 > 소수 찾기 (프로그래머스 level 2)
 # https://programmers.co.kr/learn/courses/30/lessons/42839
 
 import itertools

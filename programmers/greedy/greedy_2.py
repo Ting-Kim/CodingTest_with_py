@@ -1,3 +1,6 @@
+# 코딩테스트 연습 > 탐욕법(Greedy) > 큰 수 만들기 (프로그래머스 level 2)
+# https://programmers.co.kr/learn/courses/30/lessons/42883
+
 def solution(number, k):
     answer = []
     numbers = [element for element in number]  # 이게 더 빠름..

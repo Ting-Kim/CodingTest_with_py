@@ -1,4 +1,4 @@
-# 프로그래머스 Level 2 - 기능개발 ( 스택/큐 )
+# # 코딩테스트 연습 > 스택/큐 > 기능개발 (프로그래머스 level 2)
 # https://programmers.co.kr/learn/courses/30/lessons/42586
 
 from collections import deque

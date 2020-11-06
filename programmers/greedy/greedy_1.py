@@ -1,4 +1,4 @@
-# 코딩테스트 연습 > 탐욕법(Greedy) > 체육복(level 1)
+# 코딩테스트 연습 > 탐욕법(Greedy) > 체육복 (프로그래머스 level 1)
 # https://programmers.co.kr/learn/courses/30/lessons/42862
 # 만약 문제가 여벌의 체육복을 2장 빌려줄 수 있는 조건이었다면?
 

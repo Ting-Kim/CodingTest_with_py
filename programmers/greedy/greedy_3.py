@@ -1,3 +1,6 @@
+# 코딩테스트 연습 > 탐욕법(Greedy) > 조이스틱 (프로그래머스 level 2)
+# https://programmers.co.kr/learn/courses/30/lessons/42860
+
 # 65 ~ 90 ( A ~ Z )
 import re
 

@@ -1,29 +1,47 @@
 def solution(number, k):
-    numbers = [element for element in number] # 이게 더 빠름..
+    answer = []
+    numbers = [element for element in number]  # 이게 더 빠름..
     # numbers = list(map(str, number))
     # while k > 0:
     #     if k >= len(number):
     #         return answer
-    a = 0
-    for i in range(k):
-        idx = len(numbers) - 1
+    idx = -1
+    length = len(numbers)
 
-        for j in range(idx):
-            if numbers[j] == '9':
-                continue
-            if numbers[j+1] == '0':
-                idx = j+1
-                break
-            if numbers[j] < numbers[j+1]:
+    # mx = max(numbers)
+    # pattern = re.compile('[0-'+str(int(mx)-1)+']')
+
+    # print(mx)
+
+    for i in range(length - k):
+        # if pattern.search(''.join(numbers)) == None:
+        #     return ''.join(numbers[:k-i])
+
+        temp = '0'
+        for j in range(idx+1, k+len(answer)+1): #
+
+            if numbers[j] > temp:
                 idx = j
+                temp = numbers[j]
+            if numbers[j] == '9':
+                idx = j
+                temp = numbers[j]
                 break
 
-        print(numbers.pop(idx))
+        # answer.append(numbers[idx]) # => 루프에서 조건문 한번도 통과 못 했을 시 idx가 이전 루프값을 그대로 받아오는 문제..
+        answer.append(temp)
 
-    # for element in numbers:     # 이게 더 빠름
-    #     answer += element
-    return ''.join(numbers)
+    return ''.join(answer)
 
-number = "4177252841"
-k = 4
-print(solution(number,k))
+
+number = "12034506708"
+k = 6
+print(solution(number, k))
+
+'''
+980469200056510
+988469222256511
+
+
+56778
+'''

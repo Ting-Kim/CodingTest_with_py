@@ -1,23 +1,22 @@
-# 프로그래머스 - Lv2.올바른 괄호
-from collections import deque
+# 프로그래머스 - Lv2.스킬트리
 
-def solution(s):
-    stack = deque()
+def solution(skill, skill_trees):
+    answer = len(skill_trees)
+    order = list(skill)
 
-    for m in s:
-        if m == '(':
-            stack.append(m)
-        else:
-            if stack:
-                if stack.pop() != '(':
-                    return False
-            else:
-                return False
+    for x in skill_trees:
+        i = 0
+        for m in x:
+            if m in order:
+                if order[i] == m:
+                    i += 1
+                else:
+                    answer -= 1
+                    # print(x, ' 차례: ', m)
+                    break
 
-    if stack:
-        return False
+    return answer
 
-    return True
-
-s = "(()("
-print(solution(s))
+skill = "CBD"
+skill_trees = ["BACDE", "CBADF", "AECB", "BDA"]
+print(solution(skill,skill_trees))

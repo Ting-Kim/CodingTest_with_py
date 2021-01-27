@@ -1,3 +1,5 @@
+# lv3. 방문길이
+
 def solution(dirs):
     answer = 0
     arr = [[Node(i, j) for i in range(11)] for j in range(11)]
